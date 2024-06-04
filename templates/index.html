@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="first">
+	<h2 class="title-p1">
+		artworks customized to your interior
+	</h2>
+
+	<div class="img-container">
+		<div class="img-item">
+			<img src="static/img/title1.png">
+		</div>
+		<div class="img-item">
+			<img src="static/img/title2.png">
+		</div>
+	</div>
+	<div class="content-container-2">
+		<p class="content-p3">Take a photo of your interior and we will create a perfectly
+			matching
+			one of a
+			kind artwork</p>
+		<div class="box-container">
+			<div class="box-item"><a href="{{ url_for('inquiry') }}">
+					<p class="p1">Make an inquiry</p>
+				</a></div>
+			<div class="box-item"><a href="">
+					<p class="p2">View our pricing</p>
+				</a></div>
+		</div>
+	</div>
+</section>
+<section class="second">
+	<h2 class="title-p2">
+		Send us images of that you wish the painting to match
+	</h2>
+	<p class="content-p3">It could be images of anything, really. Decor, artworks, furniture, clothing, memes. We
+		will use them to generate designs and when you’ve chosen the design you like, we will deliver your
+		customized artwork.</p>
+	<div class="img-text-container">
+		<p class="title-p3">references</p>
+		<p class="content-p3">References used to come up with the design</p>
+		<div class="img-container">
+			<div class="img-item2">
+				<img src="static/img/ref1.png">
+			</div>
+			<div class="img-item2">
+				<img src="static/img/ref2.png">
+			</div>
+			<div class="img-item2">
+				<img src="static/img/ref3.png">
+			</div>
+		</div>
+	</div>
+	<div class="img-text-container">
+		<p class="title-p3">final result</p>
+		<p class="content-p3">The finished painting hanging in place</p>
+		<div class="img-container">
+			<div class="img-item">
+				<img src="static/img/res1.png">
+			</div>
+			<div class="img-item">
+				<img src="static/img/res2.png">
+			</div>
+
+		</div>
+	</div>
+
+</section>
+<section class="third">
+	<h2 class="title-p2">
+		AI Generated designs from prompts & reference images
+	</h2>
+	<p class="content-p3">It’s simple, just provide us with some basic information of what you’re looking for, it
+		could be images of other artworks or short prompts of a specific art style or color.</p>
+	<div class="img-box-container">
+		<div class="img-box-item rectangle-box-container">
+			<div class="rectangle-box1">
+				<p>“cool monochrome ai girl meme with thug life glasses”</p>
+			</div>
+			<div class="rectangle-box2">
+				<p>“banskys morons in cyber punk monkey-business theme”</p>
+			</div>
+			<div class="rectangle-box3">
+				<p>“nyan cat drinking beers with benjamin franklin”</p>
+			</div>
+		</div>
+		<div class="img-box-item slides-container">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<div class="slides"><img src="static/img/slide1.png"></div>
+			<div class="slides"><img src="static/img/ref1.png"></div>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+
+	</div>
+
+</section>
+<!-- <section>
+	<div class="img-box-container">
+
+	</div>
+</section> -->
+<section>
+	<p class="title-p3">testimonials</p>
+	<h2 class="title-p2">
+		read what others have to say
+	</h2>
+	<div class="wrapper-container">
+		<div class="wrapper">
+			<div class="avatar"><img src="static/img/avatar.png"></div>
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatibus odio adipisci
+					ducimus? Impedit est dolore maxime unde repudiandae blanditiis veritatis
+					accusamus, in fugit excepturi optio aperiam officia eius, omnis numquam omnis
+					numquam. omnis numquam.</p>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="avatar"><img src="static/img/avatar.png"></div>
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatibus odio adipisci
+					ducimus? Impedit est dolore maxime unde repudiandae blanditiis veritatis
+					accusamus, in fugit excepturi optio aperiam officia eius, omnis numquam omnis
+					numquam. omnis numquam.</p>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-container">
+		<div class="wrapper">
+			<div class="avatar"><img src="static/img/avatar.png"></div>
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatibus odio adipisci
+					ducimus? Impedit est dolore maxime unde repudiandae blanditiis veritatis
+					accusamus, in fugit excepturi optio aperiam officia eius, omnis numquam omnis
+					numquam. omnis numquam.</p>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="avatar"><img src="static/img/avatar.png"></div>
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatibus odio adipisci
+					ducimus? Impedit est dolore maxime unde repudiandae blanditiis veritatis
+					accusamus, in fugit excepturi optio aperiam officia eius, omnis numquam omnis
+					numquam. omnis numquam.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<h2 class="title-p1">
+		Let’s turn your ideas into reality
+	</h2>
+	<div class="box-item center"><a href="inquiries.html">
+			<p class="p1">Make an inquiry</p>
+		</a></div>
+</section>
+<!-- <section>
+	<p>Here at kreddig.io you'll get exactly what you want.</p>
+	<p>Art uniquely customized to your preferences.</p>
+	<p>Our AI powered design process ensures to meet your requirements.</p>
+</section>
+<section>
+	<video width="250" height="200" controls>
+
+	</video>
+</section>
+<section>
+	<p>The only things we need from you in order to create a customized artwork is:</p>
+	<p>1. Photograph of your interior with the intended space clearly visible. Fake/Stock/AI will be ignored.</p>
+	<p>2. Images of reference artworks. For a fast and easy process, attach similar artworks.</p>
+	<p>3. Size and other requirements(framing?). If you're not sure about sizing we can help you with suggestions.
+	</p>
+	<p><b>We are now offering early bird prices!</b></p>
+	<a href="/order">Order Now</a>
+</section>
+<section>
+
+	<video width="250" height="200" controls>
+		<source src="#" type="video/webm">
+	</video>
+</section>
+<section>
+	<h2>Prices</h2>
+	<p><b>We are now offering early bird prices</b></p>
+	<p>There are many factors which determines the price, but we have specified some basic examples:</p>
+	<p>80x80cm / 30x30" abstract painting on stretched canvas including shipping: $300</p>
+	<p>100x100cm / 40x40" abstract painting on stretched canvas including shipping: $500</p>
+	<p>120x120cm / 50x50" abstract painting on stretched canvas including shipping: $700</p>
+</section>
+<section>
+	<h2>Payments</h2>
+	<p>FREE suggestions and consultation!</p>
+	<p>We accept crypto payments and credit card payments.</p>
+	<p>Placing a order requires full payment.</p>
+</section>
+<section>
+	<h2>Returns</h2>
+	<p>We offer 14 days money back guarantee!</p>
+</section>
+<section>
+	
+	<video width="250" height="200" controls>
+		<source src="#" type="">
+	</video>
+	<p>We are now offering early bird prices!</p>
+	<a href="/order">Order Now</a>
+</section> -->
+<script>
+	/*mav toggle*/
+	const toggleBtn = document.querySelector(".toggle-btn")
+	const toggleBtnIcon = document.querySelector(".toggle-btn i")
+	const dropDownMenu = document.querySelector(".dropdown-menu")
+	toggleBtn.onclick = function () {
+		dropDownMenu.classList.toggle('open')
+		const isOpen = dropDownMenu.classList.contains('open')
+
+		toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+
+	}
+
+	/*img slide*/
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("slides");
+
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex - 1].style.display = "block";
+	}
+
+
+</script>
+{% endblock %}

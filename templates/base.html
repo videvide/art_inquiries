@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{ page_title }}---kreddig.io</title>
+	<link rel="stylesheet" href="static/styles.css" />
+
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+		rel="stylesheet">
+	<script src="static/main.js"></script>
+	{% block head %}
+	{% endblock %}
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo"><a href="/">kreddig.io</a></div>
+			<ul class="links">
+
+				<li><a href="">inquiries</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="">pricing</a></li>
+				<li><a href="">support</a></li>
+
+
+			</ul>
+			<div class="toggle-btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+
+		</div>
+
+		<div class="dropdown-menu">
+			<li><a href="">inquiries</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">pricing</a></li>
+			<li><a href="">support</a></li>
+
+		</div>
+
+	</header>
+	<main>
+		{% block main %}{% endblock %}
+	</main>
+	<footer>
+		<div class="footer-container">
+			<p>&copykreddig.io</p>
+			<div class="footer-item">
+				<a href="#">
+					<p>Legal & Privacy</p>
+				</a>
+				<a href="#"> Terms of Service</a>
+				<a href="#"> Privacy Policy</a>
+				<a href="#">Copyright Disclaimer</a>
+			</div>
+			<div class="footer-item">
+				<a href="#">
+					<p>About</p>
+				</a>
+				<a href="#"> Story & Mission</a>
+				<a href="#"> Manufacturing</a>
+				<a href="#">Social Responsibility</a>
+			</div>
+
+			<div class="footer-item">
+				<a href="#">
+					<p>Contact</p>
+				</a>
+				<a href="#"> Email</a>
+				<a href="#">WhatsApp</a>
+				<a href="#">WeChat</a>
+			</div>
+
+
+		</div>
+		<hr>
+		<!-- <small>&copykreddig.io</small>
+		<a href="#">WhatsApp</a>
+		<a href="#">Email</a>
+		<p>
+			<small>Important: We do not copy any provided reference artworks, we use them as inspiration for
+				new artworks.</small>
+			<a href="terms-of-service">Terms of Service</a>
+			<a href="privacy-policy">Privacy Policy</a>
+		</p> -->
+	</footer>
+</body>
+
+</html>

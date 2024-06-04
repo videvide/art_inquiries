@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block main %}
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+		{% for message in messages %}
+			<p>{{ message }}</p>
+		{% endfor %}
+	{% endif %}
+{% endwith %}
+{% if utc_timestamp %}
+{{ utc_timestamp }}
+{% endif %}
+<form method="POST" action="" enctype="multipart/form-data">
+	{{ form.csrf_token }}
+	{{ form.name.label }} {{ form.name(size=20) }}
+	{% if form.name.errors %}
+		<ul class="errors">
+			{% for error in form.name.errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+	{{ form.email.label }} {{ form.email(size=20) }}
+	{% if form.email.errors %}
+		<ul class="errors">
+			{% for error in form.email.errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+	{{ form.images.label }} {{ form.images(size=20) }}
+	{% if form.images.errors %}
+		<ul class="errors">
+			{% for error in form.images.errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+	<input type="submit" value="Go">
+</form>
+<p>You need to provide clear photos of your interior and images of reference artworks.</p>
+<p>We will not respond to any uncompleted or invalid inquiries.</p>
+<p>We will only respond to inquiries made by confirmed email adresses.<p/>
+<p><a href="/email-confirmation">confirm your email address</a>.</p>
+{% endblock %}
